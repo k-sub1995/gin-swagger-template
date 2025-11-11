@@ -10,6 +10,7 @@ RUN go install github.com/swaggo/swag/cmd/swag@latest
 
 COPY go.mod .
 RUN go mod download
+RUN go mod tidy
 
 # --- Development Stage ---
 FROM base AS dev
