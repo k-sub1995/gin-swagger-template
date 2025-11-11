@@ -3,7 +3,7 @@ root = "."
 tmp_dir = "tmp"
 
 [build]
-  cmd = "swag init && go build -o ./tmp/main ."
+  cmd = "go mod tidy && swag init && go build -buildvcs=false -o ./tmp/main ."
   bin = "tmp/main"
   full_bin = "APP_ENV=dev APP_USER=air ./tmp/main"
   delay = 1000 # ms
