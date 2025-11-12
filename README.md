@@ -19,7 +19,7 @@ docker compose up
 
 ## Usage
 
-Once the container is running, you can access the following endpoints:
+Once the container is running, access the following endpoints.
 
 - **API Server**: `http://localhost:8080`
 - **Ping Endpoint**: `http://localhost:8080/ping`
